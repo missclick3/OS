@@ -1,0 +1,138 @@
+execve("./prog2", ["./prog2"], 0x7ffdf091e200 /* 56 vars */) = 0
+brk(NULL)                               = 0x562d93fe6000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcf3643950) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=94457, ...}) = 0
+mmap(NULL, 94457, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9b2a8d8000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18816, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9b2a8d6000
+mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9b2a8d0000
+mmap(0x7f9b2a8d1000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f9b2a8d1000
+mmap(0x7f9b2a8d3000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f9b2a8d3000
+mmap(0x7f9b2a8d4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f9b2a8d4000
+close(3)                                = 0
+openat(AT_FDCWD, "./tls/x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029560, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\237\333t\347\262\27\320l\223\27*\202C\370T\177"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9b2a6de000
+mmap(0x7f9b2a700000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f9b2a700000
+mmap(0x7f9b2a878000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f9b2a878000
+mmap(0x7f9b2a8c6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f9b2a8c6000
+mmap(0x7f9b2a8cc000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9b2a8cc000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9b2a6db000
+arch_prctl(ARCH_SET_FS, 0x7f9b2a6db740) = 0
+mprotect(0x7f9b2a8c6000, 16384, PROT_READ) = 0
+mprotect(0x7f9b2a8d4000, 4096, PROT_READ) = 0
+mprotect(0x562d9223f000, 4096, PROT_READ) = 0
+mprotect(0x7f9b2a91d000, 4096, PROT_READ) = 0
+munmap(0x7f9b2a8d8000, 94457)           = 0
+openat(AT_FDCWD, "./tls/x86_64/x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/lib1.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./lib1.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\20\0\0\0\0\0\0"..., 832) = 832
+brk(NULL)                               = 0x562d93fe6000
+brk(0x562d94007000)                     = 0x562d94007000
+fstat(3, {st_mode=S_IFREG|0775, st_size=16232, ...}) = 0
+getcwd("/home/missclick3/Desktop/OSLabs/lab5/l5Dynamic", 128) = 47
+mmap(NULL, 16432, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9b2a8eb000
+mmap(0x7f9b2a8ec000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f9b2a8ec000
+mmap(0x7f9b2a8ed000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9b2a8ed000
+mmap(0x7f9b2a8ee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9b2a8ee000
+close(3)                                = 0
+mprotect(0x7f9b2a8ee000, 4096, PROT_READ) = 0
+openat(AT_FDCWD, "./tls/x86_64/x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./tls/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./x86_64/lib2.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./lib2.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\20\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=16232, ...}) = 0
+getcwd("/home/missclick3/Desktop/OSLabs/lab5/l5Dynamic", 128) = 47
+mmap(NULL, 16432, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9b2a8e6000
+mmap(0x7f9b2a8e7000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f9b2a8e7000
+mmap(0x7f9b2a8e8000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9b2a8e8000
+mmap(0x7f9b2a8e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9b2a8e9000
+close(3)                                = 0
+mprotect(0x7f9b2a8e9000, 4096, PROT_READ) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "0.Change lib.\n", 140.Change lib.
+)         = 14
+write(1, "1. For searching pi.\n", 211. For searching pi.
+)  = 21
+write(1, "2. For searching e.\n", 202. For searching e.
+)   = 20
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, 0
+"0\n", 1024)                    = 2
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, 2000
+"2000\n", 1024)                 = 5
+write(2, "Undefined command\n", 18Undefined command
+)     = 18
+write(1, "0.Change lib.\n", 140.Change lib.
+)         = 14
+write(1, "1. For searching pi.\n", 211. For searching pi.
+)  = 21
+write(1, "2. For searching e.\n", 202. For searching e.
+)   = 20
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, 1
+"1\n", 1024)                    = 2
+read(0, 2000
+"2000\n", 1024)                 = 5
+write(1, "This is vallis realise of pi\n", 29This is vallis realise of pi
+) = 29
+write(1, "pi = 3.141200\n", 14pi = 3.141200
+)         = 14
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, 0
+"0\n", 1024)                    = 2
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, 2
+"2\n", 1024)                    = 2
+read(0, 20000
+"20000\n", 1024)                = 6
+write(1, "e = 2.718214\n", 13e = 2.718214
+)          = 13
+write(1, "Enter number the command and arg"..., 35Enter number the command and args: ) = 35
+read(0, "", 1024)                       = 0
+munmap(0x7f9b2a8eb000, 16432)           = 0
+munmap(0x7f9b2a8e6000, 16432)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
